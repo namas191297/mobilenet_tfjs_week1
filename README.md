@@ -13,7 +13,7 @@ This model has not been re-trained, it uses the pre-trained weights to make pred
 
 ## Usage
 
-Open the ```index.html``` page in any web browser and you're good to go. The model is loaded using the ```<script>``` tag, and JavaScript is used to make the predictions and output them.
+```index.html``` and ```index.js``` can be run locally on the localhost or either hosted on a web server. The model is loaded using the ```<script>``` tag, and JavaScript is used to make the predictions and output them.
 
 
 ## Output
