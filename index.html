@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <style>
+table, th, td {
+  border: 0px solid black;
+}
+
+button {
+ margin-top:20px;
+ margin-left:200px;
+}
+
+p {
+ margin-left:30px;
+}
+
+input {
+ margin-top:20px;
+}
+
+img {
+ margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+<table width="100%">
+    <tr align="center">
+        <td colspan="2">
+            <img src="https://imgur.com/T4dzZAO.png" width="100%"></img>
+        </td>
+    </tr>
+    <tr align="center">
+        <td align="center" colspan="2">
+            <img id="img" src="https://imgur.com/W6X2i2B.png" width="224" height="224"></img>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            <input type="file" id="uploadedimage" onchange="loadFile(event)"/>
+        </td>
+        <td aligh="left">
+            <button id="predictValue" onclick="app()">Predict</button>
+        </td>
+    </tr>
+    <tr align="center">
+        <td align="center" colspan="2">
+            <p id="result1"></p>
+            <p id="result2"></p>
+            <p id="result3"></p>
+        </td>
+    </tr>
+</table>
+<script src="index.js"></script>
+</body>
+</html>
